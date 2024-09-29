@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class = "login-logo">
+                <img src="logo-spotify.png" alt="Spotify Logo" class="logo">
+                <h2>Login to Spotify</h2>
+            </div>
+            
+            <form id="loginForm" class="login-form" action="login.php" method="POST" novalidate>
+                <label for="username">Nama pengguna</label>
+                <input type="text" id="username" name="username" placeholder="Nama pengguna" required>
+                <p class="error-message">Nama pengguna tidak boleh kosong.</p>
+            
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama" required>
+                <p class="error-message">Nama tidak boleh kosong.</p>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
+                <p class="error-message">Email tidak boleh kosong.</p>
+                
+                <label for="password">Kata sandi</label>
+                <input type="password" id="password" name="password" placeholder="Kata sandi" required>
+                <p class="error-message">Kata sandi tidak boleh kosong.</p>
+                
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn">Log In</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
