@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'circular_stdmedium';
+    src: url('circular-std-medium-500-webfont.woff2') format('woff2'),
+         url('circular-std-medium-500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'circular_stdblack';
+    src: url('fontsfree-net-circularstd-black-webfont.woff2') format('woff2'),
+         url('fontsfree-net-circularstd-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+html, body {
+    overflow-x: hidden; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'circular_stdmedium' ;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.data-spotify-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    text-align: left; 
+}
+
+.data-spotify-title h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+search {
+    margin: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    text-align: left; 
+}
+
+.search-bar-spotify {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    border: 5px solid var(--hijau);
+    width: fit-content;
+    border-radius: 25px;
+  }
+  
+  .search-input-spotify {
+    border: 0;  
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 40px;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    outline: none;
+    font-family: 'circular_stdmedium' ;
+  }
+  
+  .search-button-spotify {
+    border: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:#1DB954;
+    width: 50px;
+    outline: none;
+  }
+
+.search-button-spotify:hover {
+    background-color: #078634;
+}
+
+.button {
+    background-color: #1DB954;
+    color: white;  
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    margin: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.table-spotify {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.table-spotify-header,
+.table-spotify-data {
+    border: 1px solid #646464;
+    text-align: left;
+    padding: 8px;
+}
+
+.table-spotify-header:nth-child(1),
+.table-spotify-row:nth-child(1),
+.table-spotify-data:nth-child(1) {
+    width: 35px;
+    text-align: center;
+}
+
+thead > .table-spotify-row {
+    background-color: #1DB954;
+}
+
+/* Hapus aturan untuk baris genap */
+tbody > .table-spotify-row {
+    background-color: #121212; /* Ganti dengan warna yang kamu inginkan */
+}
+
+/* Ubah warna untuk seluruh tbody */
+tbody {
+    background-color: #121212; /* Ganti dengan warna yang kamu inginkan */
+}
+
+
+.link {
+    margin: 7px; /* Atur margin sesuai kebutuhan Anda */
+    color: #1DB954; /* Pastikan warna tetap sama */
+  }
