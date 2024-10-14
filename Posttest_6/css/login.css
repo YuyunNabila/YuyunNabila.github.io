@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'circular_stdmedium';
+    src: url('circular-std-medium-500-webfont.woff2') format('woff2'),
+         url('circular-std-medium-500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'circular_stdblack';
+    src: url('fontsfree-net-circularstd-black-webfont.woff2') format('woff2'),
+         url('fontsfree-net-circularstd-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+html, body {
+    overflow-x: hidden; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'circular_stdmedium' ;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 400px;
+    margin: 50px;
+    height: 600px; /* Tambahkan ini untuk memastikan kontainer memiliki tinggi penuh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1DB954; */
+}
+
+.login-box {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.login-form {
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'circular_stdmedium' ;
+}
+
+.login-form label {
+    font-size: 14px;
+    margin-bottom: 9px;
+    display: block;
+}
+
+.login-form input {
+    font-family: 'circular_stdmedium' ;
+    width: 275px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid white ;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Optional: Tambahkan margin atas untuk memberikan ruang */
+}
+
+.submit-btn {
+    font-family: 'circular_stdmedium';
+    width: 100px;
+    padding: 10px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #1aa34a;
+}
+
+
+
+.forgot-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-link a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.signup a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.error-input {
+    border-color: red;
+}
+
+
+
+.login-success {
+    height: 190px;
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(23, 23, 23, 0.614);
+    text-align: center;
+}
+
+.login-success h1 {
+    color: #ffffff;
+    margin-bottom: 7px;
+}
+
+.login-success h2 {
+    color: #ffffff;
+}
+
+.login-success p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.login-success strong {
+    color: #1DB954;
+}
+
+.profile {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    text-align: left; 
+}
+
+/* Styling untuk label elemen file */
+.login-form label[for="file"] {
+    font-size: 14px;
+    margin-bottom: 9px;
+    display: block;
+    color: #1DB954; /* Sesuaikan dengan tema gelap */
+}
+
+/* Hide the default file input button */
+input[type="file"] {
+    display: none; /* Sembunyikan input asli */
+}
+
+/* Custom label for the file input */
+.custom-file-label {
+    display: inline-block;
+    font-family: 'circular_stdmedium';
+    width: 100%;
+    padding: 12px;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+/* Hover effect for the custom button */
+.custom-file-label:hover {
+    background-color: #1aa34a;
+}
+
+/* Display the selected file name */
+.file-name {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+    font-style: italic;
+}
+    
+
+
+/* Pesan error jika file terlalu besar */
+.error-message {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
